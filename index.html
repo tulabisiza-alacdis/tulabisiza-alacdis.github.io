@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">
+  <span></span><span></span><span></span>
+</button>
+
+<aside class="sidebar" id="navbar">
+  <div class="sidebar-profile">
+    <img id="sidebarImg" alt="Profile photo" />
+    <h2 id="logo"></h2>
+  </div>
+  <ul class="nav-links" id="navLinks"></ul>
+</aside>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <h3 id="heroGreeting"></h3>
+        <h1 id="heroTitle"></h1>
+        <p id="heroText"></p>
+        <div class="btn-group" id="heroButtons"></div>
+      </div>
+      <div class="hero-img">
+        <img id="heroImg" alt="Profile photo" />
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img id="aboutImg" alt="About me photo" />
+      </div>
+      <div class="about-text">
+        <h2 id="aboutTitle"></h2>
+        <h3 id="aboutSubtitle"></h3>
+        <p id="aboutText"></p>
+        <a href="#contact" class="btn btn-orange" id="aboutBtn"></a>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section light" id="skills">
+      <h2 class="section-title">My <span class="accent">Skills</span></h2>
+      <div class="cards" id="skillsList"></div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section class="section dark" id="research">
+      <h2 class="section-title">My <span class="accent">Research</span></h2>
+      <div class="cards" id="researchList"></div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section light" id="projects">
+      <h2 class="section-title">My <span class="accent">Projects</span></h2>
+      <div class="cards" id="projectsList"></div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section dark" id="education">
+      <h2 class="section-title">My <span class="accent">Education</span></h2>
+      <div class="timeline" id="educationList"></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <h2 class="section-title">Contact <span class="accent">Me</span></h2>
+      <form class="contact-form" id="contactForm" novalidate>
+        <div id="formFields"></div>
+        <button type="submit" class="btn btn-black" id="formBtn"></button>
+        <p class="form-msg" id="formMsg" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+  <div class="footer-grid" id="footerSocials"></div>
+  <hr class="footer-line" />
+  <p class="copyright" id="copyright"></p>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

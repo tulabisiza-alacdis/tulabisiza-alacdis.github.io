@@ -1,0 +1,96 @@
+{
+  "brand": "{Iza} Tulabis",
+  "cta": { "label": "Contact Me", "href": "#contact" },
+  "avatar": "image/profile.jpg",
+  "nav": [
+    { "label": "Home", "href": "#home", "icon": "bi-house" },
+    { "label": "About", "href": "#about", "icon": "bi-person" },
+    { "label": "Skills", "href": "#skills", "icon": "bi-lightning-charge" },
+    { "label": "Research", "href": "#research", "icon": "bi-briefcase" },
+    { "label": "Projects", "href": "#projects", "icon": "bi-folder2-open" },
+    { "label": "Education", "href": "#education", "icon": "bi-mortarboard" },
+    { "label": "Contact", "href": "#contact", "icon": "bi-envelope" }
+  ],
+  "hero": {
+    "greeting": "Hi",
+    "title": "I'm {Iza}<br />a Bs Information Technology student",
+    "text": "Saved by His grace and mercy",
+    "image": "image/iza.png",
+    "buttons": [
+      { "label": "Message Me", "href": "#contact", "style": "btn-black" },
+      { "label": "Research", "href": "#research", "style": "btn-orange" }
+    ]
+  },
+  "about": {
+    "title": "About {Me}",
+    "subtitle": "2nd Year {IT student}",
+    "text": "I am a christian, I love to sing, dance, and play instrument for the glory of God. I am someone who believes that growth begins with the willingness to learn. I may not know everything, but I am always curious, open to new experiences, and willing to improve myself. I enjoy exploring my creativity through technology, web development, and design, where I can turn my ideas into something meaningful. I believe that every challenge teaches me a lesson, every mistake gives me a chance to grow, and every small achievement is worth appreciating. I value humility, hard work, and the support of the people who help me along the way. I may still be discovering what I am capable of, but I am determined to keep learning, moving forward, and becoming a better version of myself. After all, I believe that being someone worth remembering is not about being perfect or knowing everything, but about having the courage to grow, the humility to learn, and the heart to remain true to who I am.",
+    "image": "image/grad.png",
+    "button": { "label": "Learn More", "href": "#skills" }
+  },
+  "skills": [
+    { "title": "Communication", "text": "Effective verbal and written communication skills." },
+    { "title": "Leadership", "text": "Ability to lead and motivate teams towards common goals." },
+    { "title": "Web Design", "text": "Clean, simple and user-friendly layouts for any device." },
+    { "title": "Basic Java", "text": "Foundational knowledge of Java programming." }
+  ],
+  "research": [
+    { "date": "2nd Sem, A.Y. 2024-2025", "title": "ACCEPTABILITY OF MUSAPARADISIACA BLOSSOM AS A PLANT-BASED BURGER PATTY ALTERNATIVES", "place": "KCP-Nueva Vizcaya, LHS department", "text": "This study examines the acceptability of Musa paradisiaca blossoms as a plant-based alternative to meat patties. Thirty participants evaluated the patties based on appearance, texture, aroma, and taste. Results showed that the patties were generally accepted, especially in appearance and texture, while aroma received a moderate rating. The findings suggest that banana blossoms have potential as a sustainable alternative to meat-based patties." },
+    { "date": "1st Sem, A.Y. 2024-2025", "title": "THE IMPACT OF COLLABORATIVE LEARNING STRATEGIES ON THE ACADEMIC PERFORMANCE AMONG THE STUDENTS OF GRADE 11 STEM STRAND OF DEBORAH AT KCP-BAMBANG INC.", "place": "KCP-Nueva Vizcaya, LHS department", "text": "This quantitative study examined how collaborative learning affects the academic performance of 25 Grade 11 STEM students at Kings College of the Philippines–Bambang. Survey results showed that group activities helped students understand STEM concepts, solve problems, communicate, respect different ideas, and develop leadership skills. The study concludes that collaborative learning supports both academic achievement and personal development." },
+    { "date": "1st Sem,A.Y. 2023-2024", "title": "NEGATIBONG EPEKTO NG SOCIAL MEDIA SA AKADEMIKONG PAGGANAP NG MGA MAG-AARAL NG IKALABIN-ISANG BAITANG MULA SA ABM MARALACHI NG KCP.BAMBANG INC.", "place": "KCP-Nueva Viscaya, LHS Department", "text": "Layunin ng pananaliksik na alamin kung paano nakakaapekto ang social media sa pag-aaral ng mga mag-aaral at kung paano ito mapapamahalaan. Gumamit ito ng quantitative method at Descriptive Survey Design sa 24 na mag-aaral na may edad 16 hanggang 18 sa King's College of the Philippines Laboratory High School-Bambang.\nLumabas na higit na negatibo ang epekto ng social media, dahil nababad at naaaliw ang mga mag-aaral dito, na humahantong sa katamaran, pagbabago sa ugali, at mga isyu sa pagtulog. Mahalaga ang balanse sa paggamit nito at sa iskedyul ng pag-aaral." }
+  ],
+  "projects": [
+    { "title": "Landing Page", "text": "A modern product landing page with smooth animations.", "tag": "HTML • CSS • JS" },
+    { "title": "E-Commerce UI", "text": "A responsive online store interface with a shopping cart.", "tag": "HTML • CSS • JS" },
+    { "title": "Weather App", "text": "A simple weather app that fetches live data from an API.", "tag": "JavaScript • API" }
+  ],
+  "contact": {
+    "button": "Send Message",
+    "success": "Thank you! Your message has been sent.",
+    "fields": [
+      { "name": "fullname", "type": "text", "placeholder": "Full Name", "required": true },
+      { "name": "email", "type": "email", "placeholder": "Email", "required": true },
+      { "name": "phone", "type": "tel", "placeholder": "Phone Number", "required": false },
+      { "name": "subject", "type": "text", "placeholder": "Subject", "required": true },
+      { "name": "message", "type": "textarea", "placeholder": "Your Message", "required": true }
+    ]
+  },
+  "education": [
+    {
+      "date": "2026 - present",
+      "title": "Bachelor of Science in Information Technology, Major in Web and Mobile Development",
+      "place": "Nueva Vizcaya State University-Bambang Campus",
+      "text": "Focused on web development and user interface design.",
+      "logo": "image/nvsu.png"
+    },
+    {
+      "date": "2017 - 2025",
+      "title": "High School",
+      "place": "King's College of the Philippines-Nueva Vizcaya",
+      "text": "Completed the Science, Technology, Engineering, and Mathematics strand",
+      "logo": "image/kcp.png"
+    },
+    {
+      "date": "2012 - 2017",
+      "title": "Elementary",
+      "place": "Paquet Integrated School",
+      "text": "Completed the elementary education",
+      "logo": "image/pis.png"
+    }
+  ],
+  "socials": [
+  { "label": "gh", "title": "GitHub", "icon": "bi-github", "text": "izatulabis-alt", "href": "https://github.com/izatulabis-alt" },
+  { "label": "em", "title": "Email", "icon": "bi-envelope-fill", "text": "izaalacdis@gmail.com", "href": "mailto:izaalacdis@gmail.com" },
+  { "label": "fb", "title": "Facebook", "icon": "bi-facebook", "text": "Iza Tulabis", "href": "https://www.facebook.com/itsssizaaa.7" },
+  { "label": "ig", "title": "Instagram", "icon": "bi-instagram", "text": "itsssizaaa.7", "href": "https://www.instagram.com/itsssizaaa.7" }
+],
+  "footerLinks": [
+    { "label": "Home", "href": "#home" },
+    { "label": "Skills", "href": "#skills" },
+    { "label": "Research", "href": "#research" },
+    { "label": "Projects", "href": "#projects" },
+    { "label": "Education", "href": "#education" },
+    { "label": "Contact", "href": "#contact" }
+  ],
+  "copyright": "© 2026 Iza. All rights reserved."
+}
