@@ -1,7 +1,7 @@
 {
   "brand": "{Iza} Tulabis",
   "cta": { "label": "Contact Me", "href": "#contact" },
-  "avatar": "image/profile.jpg",
+  "avatar": "profile.jpg",
   "nav": [
     { "label": "Home", "href": "#home", "icon": "bi-house" },
     { "label": "About", "href": "#about", "icon": "bi-person" },
@@ -15,7 +15,7 @@
     "greeting": "Hi",
     "title": "I'm {Iza}<br />a Bs Information Technology student",
     "text": "Saved by His grace and mercy",
-    "image": "image/iza.png",
+    "image": "iza.png",
     "buttons": [
       { "label": "Message Me", "href": "#contact", "style": "btn-black" },
       { "label": "Research", "href": "#research", "style": "btn-orange" }
@@ -25,7 +25,7 @@
     "title": "About {Me}",
     "subtitle": "2nd Year {IT student}",
     "text": "I am a christian, I love to sing, dance, and play instrument for the glory of God. I am someone who believes that growth begins with the willingness to learn. I may not know everything, but I am always curious, open to new experiences, and willing to improve myself. I enjoy exploring my creativity through technology, web development, and design, where I can turn my ideas into something meaningful. I believe that every challenge teaches me a lesson, every mistake gives me a chance to grow, and every small achievement is worth appreciating. I value humility, hard work, and the support of the people who help me along the way. I may still be discovering what I am capable of, but I am determined to keep learning, moving forward, and becoming a better version of myself. After all, I believe that being someone worth remembering is not about being perfect or knowing everything, but about having the courage to grow, the humility to learn, and the heart to remain true to who I am.",
-    "image": "image/grad.png",
+    "image": "grad.png",
     "button": { "label": "Learn More", "href": "#skills" }
   },
   "skills": [
@@ -61,21 +61,21 @@
       "title": "Bachelor of Science in Information Technology, Major in Web and Mobile Development",
       "place": "Nueva Vizcaya State University-Bambang Campus",
       "text": "Focused on web development and user interface design.",
-      "logo": "image/nvsu.png"
+      "logo": "nvsu.png"
     },
     {
       "date": "2017 - 2025",
       "title": "High School",
       "place": "King's College of the Philippines-Nueva Vizcaya",
       "text": "Completed the Science, Technology, Engineering, and Mathematics strand",
-      "logo": "image/kcp.png"
+      "logo": "kcp.png"
     },
     {
       "date": "2012 - 2017",
       "title": "Elementary",
       "place": "Paquet Integrated School",
       "text": "Completed the elementary education",
-      "logo": "image/pis.png"
+      "logo": "pis.png"
     }
   ],
   "socials": [
