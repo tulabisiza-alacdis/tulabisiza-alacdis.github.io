@@ -1,0 +1,230 @@
+/* ===== Colors ===== */
+:root {
+  --desk:    #dde4ec;   /* background behind the paper */
+  --paper:   #ffffff;
+  --ink:     #1c2733;
+  --muted:   #55657a;
+  --navy:    #1d3557;
+  --rule:    #c9d3df;
+  --tint:    #eaf1f8;
+  --font:    "Source Serif 4", Georgia, "Times New Roman", serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--desk);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.55;
+  padding: 32px 16px;
+}
+
+a { color: var(--navy); text-underline-offset: 3px; }
+a:hover { color: #000; }
+a:focus-visible,
+audio:focus-visible {
+  outline: 3px solid var(--navy);
+  outline-offset: 3px;
+}
+
+/* ===== The paper sheet ===== */
+.resume {
+  max-width: 850px;
+  margin: 0 auto;
+  background: var(--paper);
+  padding: 48px 52px 52px;
+  border-top: 10px solid var(--navy);
+  box-shadow: 0 10px 30px rgba(29, 53, 87, 0.18);
+}
+
+/* ===== Header ===== */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  padding-bottom: 28px;
+  border-bottom: 2px solid var(--navy);
+}
+
+.top h1 {
+  font-size: clamp(2rem, 6vw, 3rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--navy);
+}
+
+.role {
+  margin-top: 6px;
+  font-size: 1.05rem;
+  color: var(--muted);
+}
+
+.objective {
+  margin-top: 16px;
+  max-width: 46ch;
+  font-size: 1.05rem;
+}
+
+/* 2x2 photo */
+.photo {
+  flex: none;
+  width: 150px;
+  height: 150px;
+  border: 3px solid var(--navy);
+  background: var(--tint);
+  overflow: hidden;
+}
+
+.photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===== Two columns ===== */
+.body {
+  display: grid;
+  grid-template-columns: 1.65fr 1fr;
+  gap: 44px;
+  margin-top: 30px;
+}
+
+section + section { margin-top: 30px; }
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--navy);
+  padding-bottom: 6px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid var(--rule);
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+/* ===== Education timeline ===== */
+.timeline {
+  list-style: none;
+  border-left: 2px solid var(--rule);
+  margin-left: 4px;
+}
+
+.timeline li {
+  position: relative;
+  padding: 0 0 20px 22px;
+}
+
+.timeline li:last-child { padding-bottom: 0; }
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--paper);
+  border: 3px solid var(--navy);
+}
+
+.when {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.timeline li > p:last-child { margin-top: 2px; }
+
+/* ===== Personal information ===== */
+.details {
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  gap: 8px 16px;
+}
+
+.details dt {
+  font-weight: 600;
+  color: var(--muted);
+}
+
+/* ===== Sidebar ===== */
+.side {
+  background: var(--tint);
+  padding: 22px 22px 26px;
+  align-self: start;
+}
+
+.side h2 { border-bottom-color: var(--navy); }
+
+.contact,
+.skills {
+  list-style: none;
+}
+
+.contact li + li,
+.skills li + li { margin-top: 8px; }
+
+.contact a { overflow-wrap: anywhere; }
+
+.skills li {
+  padding-left: 16px;
+  position: relative;
+}
+
+.skills li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+  width: 7px;
+  height: 7px;
+  background: var(--navy);
+}
+
+audio {
+  display: block;
+  width: 100%;
+}
+
+/* ===== Phone / small screens ===== */
+@media (max-width: 720px) {
+  body { padding: 0; }
+
+  .resume { padding: 28px 20px 36px; }
+
+  .top {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .body {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+/* ===== Printing: fits one page, no background ===== */
+@media print {
+  body { background: #fff; padding: 0; font-size: 12pt; }
+
+  .resume {
+    max-width: none;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .side { background: none; padding: 0; }
+
+  .audio { display: none; }
+
+  a { color: var(--ink); text-decoration: none; }
+}

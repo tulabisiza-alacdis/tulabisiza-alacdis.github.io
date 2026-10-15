@@ -1,0 +1,229 @@
+/* ===== Colors used across the page ===== */
+:root {
+    --white:        #ffffff;
+    --powder:       #b6d7ee;
+    --powder-deep:  #8db9dc;
+
+    --navy:         #1f3b5c;
+    --navy-mid:     #2d5482;
+    --blue-link:    #2a6496;
+
+    --muted:        #4f6a86;
+}
+
+/* ===== Reset: remove default spacing, set the font ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bricolage Grotesque", Arial, sans-serif;
+}
+
+/* ===== Page background, card centered ===== */
+body {
+    padding:40px;
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(160deg,
+                var(--white) 0%,
+                var(--white) 35%,
+                var(--powder) 100%);
+}
+
+/* Outer wrapper that controls the card's width */
+.login-container {
+    width: 100%;
+    max-width: 360px;
+    padding: 10px;
+}
+
+/* ===== The card ===== */
+.login-box {
+    /* height: auto lets the card grow to fit everything inside it */
+    height: auto;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    background: var(--white);
+    padding: 22px 26px 24px;
+    border: 3px solid var(--navy);
+    border-radius: 16px;
+    box-shadow: 10px 10px 0 var(--powder-deep);
+}
+
+/* WELCOME! title */
+.login-box h2 {
+    text-align: center;
+    color: var(--navy);
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 4px;
+}
+
+.subtitle {
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+    margin-bottom: 14px;
+}
+
+/* ===== Username / Password fields ===== */
+.input-group {
+    margin-bottom: 10px;
+}
+
+.input-group label {
+    display: block;
+    color: var(--navy);
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 2px solid var(--navy);
+    border-radius: 10px;
+    outline: none;
+    font-size: 13px;
+    background: #ffffff;
+    color: var(--navy);
+    transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.input-group input::placeholder {
+    color: #7d92a8;
+}
+
+.input-group input:focus {
+    border-color: var(--blue-link);
+    box-shadow: 4px 4px 0 var(--powder-deep);
+}
+
+/* ===== Remember me + Forgot password row ===== */
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 12px;
+    font-size: 12px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--muted);
+}
+
+.remember input {
+    accent-color: var(--navy);
+    width: 15px;
+    height: 15px;
+}
+
+/* Links */
+.options a,
+.signup a {
+    color: var(--blue-link);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.options a:hover,
+.signup a:hover {
+    color: var(--navy);
+}
+
+/* ===== Log In button ===== */
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--navy);
+    border-radius: 10px;
+    background: var(--navy);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 4px 4px 0 var(--powder-deep);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.login-box button:hover {
+    background: var(--navy-mid);
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 var(--powder-deep);
+}
+
+.login-box button:active {
+    transform: translate(3px, 3px);
+    box-shadow: 0 0 0 var(--powder-deep);
+}
+
+.options a:focus-visible,
+.signup a:focus-visible,
+.login-box button:focus-visible {
+    outline: 3px solid var(--blue-link);
+    outline-offset: 3px;
+}
+
+/* ===== "Or sign in with" ===== */
+.social-text {
+    margin: 12px 0 8px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--navy);
+}
+
+/* Row of social buttons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 4px;
+}
+
+/* Each button: rounded square, same style as the inputs */
+.social-icons a {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--navy);
+    border-radius: 10px;
+    background: #fff;
+    color: var(--navy);
+    font-size: 15px;
+    text-decoration: none;
+    box-shadow: 3px 3px 0 var(--powder-deep);
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+/* Press effect on hover */
+.social-icons a:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0 var(--powder-deep);
+}
+
+/* ===== "New here? Create an account" ===== */
+.signup {
+    text-align: center;
+    margin-top: 12px;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+log-box{
+    transform: scale(1.2);
+    transform-origin:center;
+}

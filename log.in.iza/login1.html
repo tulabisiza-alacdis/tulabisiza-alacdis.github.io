@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+     <!-- Para magkasya ang page sa screen ng cellphone at hindi mukhang naka-zoom out -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Login Page</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+     <!-- Kinukuha ang font na "Bricolage Grotesque" mula sa Google Fonts (weights: 400, 500, 600, 800) -->
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <div class="login-box">
+
+            <h2>WELCOME!</h2>
+            <p class="subtitle">Hi! Please enter your details to continue.</p>
+
+            <form>
+
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        placeholder="Enter your username"
+                        autocomplete="username"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter your password"
+                        autocomplete="current-password"
+                        required
+                    >
+                </div>
+
+                <div class="options">
+                    <label class="remember">
+                        <input type="checkbox" name="remember">
+                        Remember me
+                    </label>
+
+                    <a href="#">Forgot password?</a>
+                </div>
+
+                <button type="submit">Log In</button>
+
+                <p class="social-text">Or sign in with</p>
+                    <div class="social-icons">
+                            <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" title="Google"><i class="fa-brands fa-google"></i></a>
+                            <a href="#" title="Apple"><i class="fa-brands fa-apple"></i></a>
+                    </div>
+
+                <p class="signup">
+                    New here?
+                    <a href="#">Create an account</a>
+                </p>
+            </form>
+  </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
