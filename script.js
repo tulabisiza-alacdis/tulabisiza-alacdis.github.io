@@ -67,7 +67,7 @@ $("navLinks").innerHTML = data.nav
 
   $("projectsList").innerHTML = data.projects
     .map(
-      (p) => `<div class="card"><h4>${p.title}</h4><p>${p.text}</p><span class="tag">${p.tag}</span></div>`
+      (p) => `<div class="card"><h4>${p.title}</h4><p>${p.text}</p><span class="tag">${p.tag}</span><a href="${p.link}" class="view-btn" target="_blank">View Project</a></div>`
     )
     .join("");
 
