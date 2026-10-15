@@ -40,8 +40,8 @@
     { "date": "1st Sem,A.Y. 2023-2024", "title": "NEGATIBONG EPEKTO NG SOCIAL MEDIA SA AKADEMIKONG PAGGANAP NG MGA MAG-AARAL NG IKALABIN-ISANG BAITANG MULA SA ABM MARALACHI NG KCP.BAMBANG INC.", "place": "KCP-Nueva Viscaya, LHS Department", "text": "Layunin ng pananaliksik na alamin kung paano nakakaapekto ang social media sa pag-aaral ng mga mag-aaral at kung paano ito mapapamahalaan. Gumamit ito ng quantitative method at Descriptive Survey Design sa 24 na mag-aaral na may edad 16 hanggang 18 sa King's College of the Philippines Laboratory High School-Bambang.\nLumabas na higit na negatibo ang epekto ng social media, dahil nababad at naaaliw ang mga mag-aaral dito, na humahantong sa katamaran, pagbabago sa ugali, at mga isyu sa pagtulog. Mahalaga ang balanse sa paggamit nito at sa iskedyul ng pag-aaral." }
   ],
   "projects": [
-    { "title": "Resume", "text": "My simple resume webpage", "tag": "HTML • CSS", "link": "resume.iza/" },
-    { "title": "Login Form", "text": "A simple log in form", "tag": "HTML • CSS", "link": "log.in.iza/login1.html" }
+    { "title": "Resume", "text": "My simple resume webpage", "tag": "HTML • CSS", "link":"resume.iza/" },
+    { "title": "Login Form", "text": "A simple log in form", "tag": "HTML • CSS", "link":"log.in.iza/login1.html" }
   ],
   "contact": {
     "button": "Send Message",
