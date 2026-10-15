@@ -1003,3 +1003,22 @@ main,
 .sidebar-socials {
   display: none;
 }
+.view-btn {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 9px 20px;
+  background: var(--orange);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 10px;
+  font-family: inherit;
+  font-siza: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(255, 90, 31,0.3);
+  transition: transform 0.3s, background 0.3s, background 0.3s;
+}
+.view-btn:hover {
+  background: var(--orange-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(255, 90, 31,0.4);
+}
