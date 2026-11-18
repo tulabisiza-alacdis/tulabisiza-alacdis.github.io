@@ -13,6 +13,9 @@ const accent = (str) => str.replace(/\{(.+?)\}/g, '<span class="accent">$1</span
 
 const $ = (id) => document.getElementById(id);
 
+const esc = (str) =>
+  String(str).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
 function setImage(el, src) {
     if(!el) return;
   el.src = src;
@@ -60,15 +63,28 @@ $("navLinks").innerHTML = data.nav
   $("aboutBtn").textContent = data.about.button.label;
   $("aboutBtn").href = data.about.button.href;
 
-  // Projects (cards)
+  // Skills (cards)
   $("skillsList").innerHTML = data.skills
     .map((s) => `<div class="card"><h4>${s.title}</h4><p>${s.text}</p></div>`)
     .join("");
 
+  // Projects (cards) - image, tags and role are optional
   $("projectsList").innerHTML = data.projects
-    .map(
-      (p) => `<div class="card"><h4>${p.title}</h4><p>${p.text}</p><span class="tag">${p.tag}</span><a href="${p.link}" class="view-btn" target="_blank">View Project</a></div>`
-    )
+    .map((p) => {
+      const tags = Array.isArray(p.tags)
+        ? p.tags
+        : p.tag
+        ? p.tag.split("•").map((t) => t.trim()).filter(Boolean)
+        : [];
+      const thumb = p.image
+        ? `<div class="project-thumb"><img src="${p.image}" alt="${esc(p.title)} screenshot" onerror="this.parentElement.style.display='none'" /></div>`
+        : "";
+      const tagsHtml = tags.length
+        ? `<div class="tags">${tags.map((t) => `<span class="tag">${esc(t)}</span>`).join("")}</div>`
+        : "";
+      const role = p.role ? `<p class="project-role">My role: ${esc(p.role)}</p>` : "";
+      return `<div class="card project-card">${thumb}<div class="project-body"><h4>${p.title}</h4><p>${p.text}</p>${tagsHtml}${role}<a href="${p.link}" class="view-btn" target="_blank" rel="noopener">View Project</a></div></div>`;
+    })
     .join("");
 
   // Experience & Education (timeline)
@@ -122,6 +138,45 @@ $("navLinks").innerHTML = data.nav
       .join("");
   }
   if ($("copyright")) $("copyright").textContent = data.copyright;
+}
+
+/* ---------- LATEST GITHUB REPOSITORIES ---------- */
+function loadRepos(data) {
+  const list = $("repoList");
+  if (!list) return;
+
+  // username comes from the GitHub entry in "socials" (data.json)
+  const gh = (data.socials || []).find((s) => (s.title || "").toLowerCase() === "github");
+  if (!gh) {
+    list.innerHTML = '<p class="repo-msg">GitHub account not set.</p>';
+    return;
+  }
+  const username = gh.text;
+
+  list.innerHTML = '<p class="repo-msg">Loading repositories...</p>';
+
+  fetch("https://api.github.com/users/" + encodeURIComponent(username) + "/repos?sort=pushed&per_page=6")
+    .then((res) => {
+      if (!res.ok) throw new Error("GitHub request failed");
+      return res.json();
+    })
+    .then((repos) => {
+      const items = repos.filter((r) => !r.fork);
+      if (!items.length) {
+        list.innerHTML = '<p class="repo-msg">No public repositories yet.</p>';
+        return;
+      }
+      list.innerHTML = items
+        .map(
+          (r) =>
+            `<div class="repo-item"><a href="${r.html_url}" target="_blank" rel="noopener noreferrer">${esc(r.name)}</a><span class="repo-lang">${esc(r.language || "")}</span></div>`
+        )
+        .join("");
+    })
+    .catch((err) => {
+      console.error(err);
+      list.innerHTML = '<p class="repo-msg">Could not load repositories right now.</p>';
+    });
 }
 
 /* ---------- MOBILE MENU ---------- */
@@ -205,6 +260,7 @@ fetch("data.json")
     initMenu();
     initScrollSpy();
     initForm(data.contact.success);
+    loadRepos(data);
   })
   .catch((err) => {
     console.error(err);
