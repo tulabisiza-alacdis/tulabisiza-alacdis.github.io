@@ -57,14 +57,6 @@
       "link": "log.in.iza/login1.html"
     }
     {
-      "title": "10-11 Bubble Tea Shop",
-      "text": "A simple ordering website",
-      "tags": ["HTML", "CSS", "Java Script"],
-      "role": "Designer and developer",
-      "image": "images/login.png",
-      "link": "log.in.iza/login1.html"
-    }
-    {
       "title": "Event Check-in",
       "text": "Check guest in by name or ticket code for school org events",
       "tags": ["HTML", "JSON", "Java Script", "GS"],
