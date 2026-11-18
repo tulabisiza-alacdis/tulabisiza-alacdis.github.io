@@ -45,7 +45,7 @@
       "text": "My simple resume webpage",
       "tags": ["HTML", "CSS"],
       "role": "Designer and developer",
-      "image": "images/resume.png",
+      "image": "resume.png",
       "link": "resume.iza/"
     },
     {
@@ -53,7 +53,7 @@
       "text": "A simple log in form",
       "tags": ["HTML", "CSS"],
       "role": "Designer and developer",
-      "image": "images/login.png",
+      "image": "login.png",
       "link": "log.in.iza/login1.html"
     }
     {
@@ -61,7 +61,7 @@
       "text": "Check guest in by name or ticket code for school org events",
       "tags": ["HTML", "JSON", "Java Script", "GS"],
       "role": "Designer and developer",
-      "image": "images/login.png",
+      "image": "ChecKIn.png",
       "link": "Event.tulabis/index.html"
     }
   ],
