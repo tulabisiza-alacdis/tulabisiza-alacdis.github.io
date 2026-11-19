@@ -45,14 +45,14 @@
       "text": "My simple resume webpage",
       "tags": ["HTML", "CSS"],
       "image": "resume.png",
-      "link": " https://tulabisiza-alacdis.github.io/Resume/"
+      "link": "https://tulabisiza-alacdis.github.io/Resume/"
     },
     {
       "title": "Login Form",
       "text": "A simple log in form",
       "tags": ["HTML", "CSS"],
       "image": "login.png",
-      "link": "log.in.iza/login1.html"
+      "link": "https://tulabisiza-alacdis.github.io/Log_in/"
     },
     {
       "title": "Bubble Tea Shop",
