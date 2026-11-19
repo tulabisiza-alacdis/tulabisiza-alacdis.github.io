@@ -44,7 +44,6 @@
       "title": "Resume",
       "text": "My simple resume webpage",
       "tags": ["HTML", "CSS"],
-      "role": "Designer and developer",
       "image": "resume.png",
       "link": "resume.iza/"
     },
@@ -52,7 +51,6 @@
       "title": "Login Form",
       "text": "A simple log in form",
       "tags": ["HTML", "CSS"],
-      "role": "Designer and developer",
       "image": "login.png",
       "link": "log.in.iza/login1.html"
     },
@@ -60,7 +58,6 @@
       "title": "Bubble Tea Shop",
       "text": "Simple ordering website",
       "tags": ["HTML", "CSS", "JavaScript"],
-      "role": "Designer and developer",
       "image": "bubbletea.png",
       "link":  "https://tulabisiza-alacdis.github.io/10-11-Bubble-Tea-Shop/"
     },
@@ -68,7 +65,6 @@
       "title": "Event Check-in",
       "text": "Check guest in by name or ticket code for school org events",
       "tags": ["HTML", "JSON", "JavaScript", "GS"],
-      "role": "Designer and developer",
       "image": "CheckIn.png",
       "link":  "https://tulabisiza-alacdis.github.io/Event_Check_In/"
     }
