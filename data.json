@@ -61,7 +61,7 @@
       "text": "Check guest in by name or ticket code for school org events",
       "tags": ["HTML", "JSON", "JavaScript", "GS"],
       "role": "Designer and developer",
-      "image": "ChecKIn.png",
+      "image": "CheckIn.png",
       "link": "Event.tulabis/index.html"
     }
   ],
