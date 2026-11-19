@@ -55,11 +55,11 @@
       "role": "Designer and developer",
       "image": "login.png",
       "link": "log.in.iza/login1.html"
-    }
-    {
+    },
+   {
       "title": "Event Check-in",
       "text": "Check guest in by name or ticket code for school org events",
-      "tags": ["HTML", "JSON", "Java Script", "GS"],
+      "tags": ["HTML", "JSON", "JavaScript", "GS"],
       "role": "Designer and developer",
       "image": "ChecKIn.png",
       "link": "Event.tulabis/index.html"
